@@ -38,6 +38,8 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -71,3 +73,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
