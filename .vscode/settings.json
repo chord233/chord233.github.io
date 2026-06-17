@@ -26,5 +26,8 @@
   // Run tasks in macOS
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
+  },
+  "yaml.schemas": {
+    "https://www.schemastore.org/jekyll.json": "file:///f%3A/chord233.github.io/_config.yml"
   }
 }
